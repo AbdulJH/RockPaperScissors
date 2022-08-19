@@ -31,22 +31,22 @@ function playRound(playerSelection, computerSelection) {
 
 }
 
-function game() {
-  for (let i=0; i<5; i++) {
-    let playerSelection = prompt("Rock, Paper or Scissors");
-    let computerSelection = getComputerChoice();
-    console.log(playRound(playerSelection, computerSelection))
-    console.log(`Score: ${userScore}:${computerScore}`);
-  }
-  if (userScore > computerScore) {
-    console.log(`You Win! Score: ${userScore}:${computerScore}`);
-  } else if (userScore < computerScore) {
-    console.log(`You Lose! Score: ${userScore}:${computerScore}`);
-  } else {
-    console.log(`You Tied! SCore: ${userScore}:${computerScore}`);
-  }
-}
-game();
+const rockButton = document.querySelector('.rock-btn');
+rockButton.addEventListener('click', ()=> {
+  console.log(playRound("rock", getComputerChoice()))
+})
+
+const paperButton = document.querySelector('.paper-btn');
+paperButton.addEventListener('click', ()=> {
+  console.log(playRound("paper", getComputerChoice()));
+})
+
+const scissorsButton = document.querySelector('.scissors-btn');
+scissorsButton.addEventListener('click', ()=> {
+  console.log(playRound("scissors", getComputerChoice()));
+})
+
+
 
 
 
