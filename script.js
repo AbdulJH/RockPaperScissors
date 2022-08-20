@@ -31,20 +31,40 @@ function playRound(playerSelection, computerSelection) {
 
 }
 
-const rockButton = document.querySelector('.rock-btn');
-rockButton.addEventListener('click', ()=> {
-  console.log(playRound("rock", getComputerChoice()))
-})
+function rpsClicks() {
+  const textResults = document.querySelector('.result');
 
+  //rock btn
+  const rockButton = document.querySelector('.rock-btn');
+rockButton.addEventListener('click', ()=> {
+  textResults.textContent = playRound("rock", getComputerChoice());
+  trackScores();
+})
+//paper btn
 const paperButton = document.querySelector('.paper-btn');
 paperButton.addEventListener('click', ()=> {
-  console.log(playRound("paper", getComputerChoice()));
+  textResults.textContent = playRound("rock", getComputerChoice());
+  trackScores();
 })
-
+// scissors btn
 const scissorsButton = document.querySelector('.scissors-btn');
 scissorsButton.addEventListener('click', ()=> {
-  console.log(playRound("scissors", getComputerChoice()));
+  textResults.textContent = playRound("rock", getComputerChoice());
+  trackScores();
 })
+}
+
+function trackScores() {
+  const playerScore = document.querySelector('.player-score');
+  playerScore.textContent = `PlayerScore: ${userScore}`;
+
+  const computersScore = document.querySelector('.computer-score');
+  computersScore.textContent = `ComputerScore: ${computerScore}`;
+}
+
+
+
+rpsClicks();
 
 
 

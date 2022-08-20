@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(7, 7, 131, 0.842);
+  height: 60px;
+}
+
+.text-result {
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+  padding-top: 30px;
+}
+
+.user-choices {
+  display: flex;
+  background-color: aliceblue;
+  justify-content: center;
+  padding-top: 15px;
+  gap: 50px;
+}
+
+.scores {
+  display: flex;
+  background-color: aliceblue;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding-top: 25px;
+}
+
+.winner {
+  display: flex;
+  background-color: aliceblue;
+  justify-content: center;
+  padding-top: 25px;
+}
