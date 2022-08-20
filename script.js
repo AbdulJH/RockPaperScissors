@@ -74,6 +74,13 @@ function checkWinner() {
   }
 }
 
+function gameOver() {
+  const buttons = document.querySelectorAll('button');
+  buttons.forEach((button) => {
+    button.disabled = true;
+  })
+  
+}
 
 
 rpsClicks();
