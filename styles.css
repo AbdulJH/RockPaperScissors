@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(51, 56, 61);
+  background-color: rgb(71, 76, 82);
   color: rgb(253, 81, 81);
   font-family: 'Courier New', Courier, monospace;
   height: 90px;
@@ -17,14 +17,14 @@
 .text-result {
   display: flex;
   justify-content: center;
-  background-color: aliceblue;
+  background-color: rgb(225, 241, 255);
   color: rgb(253, 81, 81);
   padding-top: 30px;
 }
 
 .user-choices {
   display: flex;
-  background-color: aliceblue;
+  background-color: rgb(225, 241, 255);
   justify-content: center;
   padding-top: 15px;
   gap: 50px;
@@ -32,7 +32,7 @@
 
 .scores {
   display: flex;
-  background-color: aliceblue;
+  background-color:rgb(225, 241, 255);
   justify-content: center;
   align-items: center;
   gap: 25px;
@@ -42,7 +42,7 @@
 
 .winner {
   display: flex;
-  background-color: aliceblue;
+  background-color:rgb(225, 241, 255);
   justify-content: center;
   padding-top: 25px;
   /* height is just to fit my monitor, wont adjust properly on other screens */
