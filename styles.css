@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -34,9 +35,12 @@
   padding-top: 25px;
 }
 
+
 .winner {
   display: flex;
   background-color: aliceblue;
   justify-content: center;
   padding-top: 25px;
+  /* height is just to fit my monitor, wont adjust properly on other screens */
+  height: 740px;
 }
