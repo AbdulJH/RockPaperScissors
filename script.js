@@ -68,8 +68,10 @@ function trackScores() {
 function checkWinner() {
   const showWinner = document.querySelector('.show-winner');
   if (userScore === 5 && computerScore !== 5) {
-    showWinner.textContent = ("You won! :)");
+    gameOver();
+    showWinner.textContent = ("You won the game! :)");
   } else if (userScore !== 5 && computerScore === 5) {
+    gameOver();
     showWinner.textContent = ("Computer wins game :(");
   }
 }
@@ -79,6 +81,9 @@ function gameOver() {
   buttons.forEach((button) => {
     button.disabled = true;
   })
+  setTimeout(function() {
+    alert("Refresh to play again!");
+  }, 2500);
   
 }
 

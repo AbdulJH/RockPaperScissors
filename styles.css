@@ -7,14 +7,18 @@
 .header {
   display: flex;
   justify-content: center;
-  background-color: rgba(7, 7, 131, 0.842);
-  height: 60px;
+  align-items: center;
+  background-color: rgb(51, 56, 61);
+  color: rgb(253, 81, 81);
+  font-family: 'Courier New', Courier, monospace;
+  height: 90px;
 }
 
 .text-result {
   display: flex;
   justify-content: center;
   background-color: aliceblue;
+  color: rgb(253, 81, 81);
   padding-top: 30px;
 }
 
