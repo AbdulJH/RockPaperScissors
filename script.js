@@ -69,10 +69,10 @@ function checkWinner() {
   const showWinner = document.querySelector('.show-winner');
   if (userScore === 5 && computerScore !== 5) {
     gameOver();
-    showWinner.textContent = ("You won the game! :)");
+    showWinner.textContent = "You won the game! :)";
   } else if (userScore !== 5 && computerScore === 5) {
     gameOver();
-    showWinner.textContent = ("Computer wins game :(");
+    showWinner.textContent = "Computer wins game :(";
   }
 }
 
