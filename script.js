@@ -60,6 +60,18 @@ function trackScores() {
 
   const computersScore = document.querySelector('.computer-score');
   computersScore.textContent = `ComputerScore: ${computerScore}`;
+
+  checkWinner();
+
+}
+
+function checkWinner() {
+  const showWinner = document.querySelector('.show-winner');
+  if (userScore === 5 && computerScore !== 5) {
+    showWinner.textContent = ("You won! :)");
+  } else if (userScore !== 5 && computerScore === 5) {
+    showWinner.textContent = ("Computer wins game :(");
+  }
 }
 
 
