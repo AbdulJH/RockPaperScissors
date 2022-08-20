@@ -43,13 +43,13 @@ rockButton.addEventListener('click', ()=> {
 //paper btn
 const paperButton = document.querySelector('.paper-btn');
 paperButton.addEventListener('click', ()=> {
-  textResults.textContent = playRound("rock", getComputerChoice());
+  textResults.textContent = playRound("paper", getComputerChoice());
   trackScores();
 })
 // scissors btn
 const scissorsButton = document.querySelector('.scissors-btn');
 scissorsButton.addEventListener('click', ()=> {
-  textResults.textContent = playRound("rock", getComputerChoice());
+  textResults.textContent = playRound("scissors", getComputerChoice());
   trackScores();
 })
 }
